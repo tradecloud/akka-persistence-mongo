@@ -10,7 +10,7 @@ A replicated [Akka Persistence](http://doc.akka.io/docs/akka/current/scala/persi
 
 | Technology | Version                          |
 | :--------: | -------------------------------- |
-| Scala      | 2.11.7, 2.12.4 - Cross Compiled  |
+| Scala      | 2.11.12, 2.12.4 - Cross Compiled |
 | Akka       | 2.5.9 or higher                  |
 | Mongo      | 2.6.x or higher                  |
 

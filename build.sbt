@@ -9,7 +9,7 @@ val scalatestVer = "2.2.4"
 organization := "nl.tradecloud"
 
 name := "akka-persistence-mongo"
-version := "1.0.1-SNAPSHOT"
+version := "1.0.1"
 
 scalaVersion := scalaVer
 scalacOptions ++= Seq(
