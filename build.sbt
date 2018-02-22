@@ -3,7 +3,7 @@ val casbahVer = "3.1.1"
 val commonsIoVer = "2.4"
 val embeddedMongoVer = "1.50.1"
 val logbackVer = "1.1.3"
-val scalaVer = "2.12.2"
+val scalaVer = "2.12.4"
 val scalatestVer = "2.2.4"
 
 organization := "nl.tradecloud"
