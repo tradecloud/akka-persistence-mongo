@@ -1,6 +1,6 @@
 # An Akka Persistence Plugin for Mongo
 
-[![Build Status](https://travis-ci.org/ironfish/akka-persistence-mongo.png?branch=master)](https://travis-ci.org/ironfish/akka-persistence-mongo)
+[![Build Status](https://travis-ci.org/tradecloud/akka-persistence-mongo.svg?branch=master)](https://travis-ci.org/tradecloud/akka-persistence-mongo) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/nl.tradecloud/akka-persistence-mongo_2.12/badge.svg)](https://maven-badges.herokuapp.com/maven-central/nl.tradecloud/akka-persistence-mongo_2.12) [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 A replicated [Akka Persistence](http://doc.akka.io/docs/akka/current/scala/persistence.html) journal backed by [MongoDB Casbah](http://mongodb.github.io/casbah/).
 
@@ -10,86 +10,29 @@ A replicated [Akka Persistence](http://doc.akka.io/docs/akka/current/scala/persi
 
 | Technology | Version                          |
 | :--------: | -------------------------------- |
-| Plugin     | [<img src="https://img.shields.io/maven-central/v/com.github.ironfish/akka-persistence-mongo-casbah_2.11.svg?label=latest%20release%20for%202.11"/>](http://search.maven.org/#search%7cga%7c1%7cg%3a%22com.github.ironfish%22a%3a%22akka-persistence-mongo-casbah_2.11%22)<br/>[<img src="https://img.shields.io/maven-central/v/com.github.ironfish/akka-persistence-mongo-casbah_2.10*.svg?label=latest%20release%20for%202.10"/>](http://search.maven.org/#search%7cga%7c1%7cg%3a%22com.github.ironfish%22a%3a%22akka-persistence-mongo-casbah_2.10%22)|
-| Scala      | 2.10.5, 2.11.7 - Cross Compiled  |
-| Akka       | 2.3.12 or higher                 |
+| Scala      | 2.11.7, 2.12.4 - Cross Compiled  |
+| Akka       | 2.5.9 or higher                  |
 | Mongo      | 2.6.x or higher                  |
-
-### Snapshot
-
-| Technology | Version                          |
-| :--------: | -------------------------------- |
-| Plugin     | [<img src="https://img.shields.io/badge/latest%20snapshot%20for%202.11-1.0.0--SNAPSHOT-blue.svg"/>](https://oss.sonatype.org/content/repositories/snapshots/com/github/ironfish/akka-persistence-mongo-casbah_2.11/1.0.0-SNAPSHOT/)
-| Scala      | 2.11.7                           |
-| Akka       | 2.4.1 or higher                  |
-| Mongo      | 3.1.x or higher                  |
 
 ## Installation
 
 ### SBT
 
-#### Release
+<br/>It can then be included as dependency:
 
 ```scala
-resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/releases"
-
-libraryDependencies ++= Seq(
-  "com.github.ironfish" %% "akka-persistence-mongo-casbah"  % "0.7.6" % "compile")
+libraryDependencies += "nl.tradecloud" %% "akka-persistence-mongo" % "1.0.1"
 ```
 
-#### Snapshot
-
-```scala
-resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
-
-libraryDependencies ++= Seq(
-  "com.github.ironfish" %% "akka-persistence-mongo"  % "1.0.0-SNAPSHOT" % "compile")
-```
-
-### Maven
-
-#### Release
-
-```XML
-// Scala 2.10.5
-<dependency>
-    <groupId>com.github.ironfish</groupId>
-    <artifactId>akka-persistence-mongo-casbah_2.10</artifactId>
-    <version>0.7.6</version>
-</dependency>
-
-// Scala 2.11.7
-<dependency>
-    <groupId>com.github.ironfish</groupId>
-    <artifactId>akka-persistence-mongo-casbah_2.11</artifactId>
-    <version>0.7.6</version>
-</dependency>
-```
-
-#### Snapshot
-
-```XML
-// Scala 2.11.7
-<dependency>
-    <groupId>com.github.ironfish</groupId>
-    <artifactId>akka-persistence-mongo_2.11</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-</dependency>
-```
 
 ### Build Locally
 
-You can build and install the plugin to your local Ivy cache. This requires sbt 0.13.8 or above.
+You can build and install the plugin to your local Ivy cache. This requires sbt 1.0.4 or above.
 
 ```scala
 sbt publishLocal
 ```
 
-<br/>It can then be included as dependency:
-
-```scala
-libraryDependencies += "com.github.ironfish" %% "akka-persistence-mongo" % "1.0.0-SNAPSHOT"
-```
 
 ## Mongo Specific Details
 
