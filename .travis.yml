@@ -1,8 +1,9 @@
 language: scala
 scala:
     - "2.11.7"
+    - "2.12.4"
 jdk:
-    - oraclejdk8
+    - openjdk8
 branches:
     except:
         - /^wip-.*$/
