@@ -1,15 +1,15 @@
-val akkaVer = "2.5.9"
+val akkaVer = "2.5.11"
 val casbahVer = "3.1.1"
 val commonsIoVer = "2.4"
-val embeddedMongoVer = "1.50.1"
+val embeddedMongoVer = "2.0.3"
 val logbackVer = "1.1.3"
-val scalaVer = "2.12.4"
-val scalatestVer = "2.2.4"
+val scalaVer = "2.12.5"
+val scalatestVer = "3.0.5"
 
 organization := "nl.tradecloud"
 
 name := "akka-persistence-mongo"
-version := "1.0.1"
+version := "1.0.2"
 
 scalaVersion := scalaVer
 scalacOptions ++= Seq(
